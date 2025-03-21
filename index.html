@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Araceli <3</title>
+    <style>
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .mensaje {
+            font-size: 24px;
+            color: yellow;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 0 0 15px yellow;
+        }
+
+        .flores {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .flor {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+
+        .flor .petalo {
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 10px yellow;
+            animation: brillar 2s infinite alternate;
+        }
+
+        .flor .petalo:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+        .flor .petalo:nth-child(2) { top: 50%; left: 0; transform: translateY(-50%) rotate(90deg); }
+        .flor .petalo:nth-child(3) { top: 50%; right: 0; transform: translateY(-50%) rotate(90deg); }
+        .flor .petalo:nth-child(4) { bottom: 0; left: 50%; transform: translateX(-50%); }
+
+        .flor .centro {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: orange;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px orange;
+        }
+
+        @keyframes brillar {
+            0% { opacity: 0.8; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="mensaje">Para Araceli <3</div>
+    <div class="flores">
+        <div class="flor">
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="centro"></div>
+        </div>
+        <div class="flor">
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="centro"></div>
+        </div>
+        <div class="flor">
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="centro"></div>
+        </div>
+        <div class="flor">
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="centro"></div>
+        </div>
+        <div class="flor">
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="petalo"></div>
+            <div class="centro"></div>
+        </div>
+    </div>
+</body>
+</html>
